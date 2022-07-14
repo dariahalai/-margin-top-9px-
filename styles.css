@@ -470,6 +470,7 @@ address{
     color: var(--white-color);
     font-size: inherit;
     margin-right: 12px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .signup-input::placeholder{
     font-size: 16px;
@@ -670,6 +671,7 @@ form{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 
   }
   .label-text{
@@ -712,10 +714,11 @@ fill: var(--color-of-active);
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* textarea:hover, */
 .form-textarea:focus{
-    border:1px solid #2196F3 ;
+    border-color:var(--color-of-active) ;
 }
 .form-textarea:hover,
 .form-textarea:focus{
@@ -747,6 +750,9 @@ fill: var(--color-of-active);
         height: 15px;
         border:2px solid #212121;
         border-radius: 2px;
+    }
+    .checkbox{
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .checkbox:checked  + .checkbox-true{
         /* background-origin: border-box; */
